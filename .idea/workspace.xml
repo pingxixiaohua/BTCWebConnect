@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ccbba74-1400-446a-be48-450f319d4aa2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="ProjectId" id="1lv2xWbXUsiGM9xwzfN4Hk9Onbg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build BitData" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BitData" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="BitData" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build BitData" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="71" key="#Inspections" timestamp="1608685115724">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1608685115724" />
+    <state x="580" y="218" key="FileChooserDialogImpl" timestamp="1608548583148">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="580" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608548583148" />
+    <state width="510" height="208" key="GridCell.Tab.0.bottom" timestamp="1609067613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="510" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609067613245" />
+    <state width="510" height="208" key="GridCell.Tab.0.center" timestamp="1609067613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="510" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609067613245" />
+    <state width="510" height="208" key="GridCell.Tab.0.left" timestamp="1609067613244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="510" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609067613244" />
+    <state width="510" height="208" key="GridCell.Tab.0.right" timestamp="1609067613245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="510" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609067613245" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

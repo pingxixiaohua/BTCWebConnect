@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e0e10e3-7542-42b2-8e51-d6b001101feb" name="Default Changelist" comment="" />
+    <list default="true" id="3e0e10e3-7542-42b2-8e51-d6b001101feb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/btcCommendStruct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/rpcConst.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/rpcConst.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpcrequest/rpcCommend.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpcrequest/rpcCommend.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,13 +17,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" path="D:\Blockchain\Go\goEnv\analysis" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lv6oRa5cty1fp4sXgnMW63sG0p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +37,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -64,25 +76,41 @@
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state x="679" y="112" key="#Inspections/0.0.1493.893@0.0.1493.893" timestamp="1608520726082" />
-    <state x="900" y="206" key="FileChooserDialogImpl" timestamp="1608604109735">
+    <state x="900" y="206" key="FileChooserDialogImpl" timestamp="1609074726101">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state x="900" y="206" key="FileChooserDialogImpl/0.0.1493.893@0.0.1493.893" timestamp="1608604109735" />
-    <state width="1450" height="197" key="GridCell.Tab.0.bottom" timestamp="1608637719784">
+    <state x="900" y="206" key="FileChooserDialogImpl/0.0.1493.893@0.0.1493.893" timestamp="1609074726101" />
+    <state width="1450" height="198" key="GridCell.Tab.0.bottom" timestamp="1609123687809">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1450" height="197" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1608637719784" />
-    <state width="1450" height="197" key="GridCell.Tab.0.center" timestamp="1608637719784">
+    <state width="1450" height="198" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1609123687809" />
+    <state width="1450" height="198" key="GridCell.Tab.0.center" timestamp="1609123687809">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1450" height="197" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1608637719784" />
-    <state width="1450" height="197" key="GridCell.Tab.0.left" timestamp="1608637719784">
+    <state width="1450" height="198" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1609123687809" />
+    <state width="1450" height="198" key="GridCell.Tab.0.left" timestamp="1609123687809">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1450" height="197" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1608637719784" />
-    <state width="1450" height="197" key="GridCell.Tab.0.right" timestamp="1608637719784">
+    <state width="1450" height="198" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1609123687809" />
+    <state width="1450" height="198" key="GridCell.Tab.0.right" timestamp="1609123687809">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1450" height="197" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1608637719784" />
+    <state width="1450" height="198" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1609123687809" />
+    <state width="1450" height="289" key="GridCell.Tab.1.bottom" timestamp="1609072470497">
+      <screen x="0" y="0" width="1493" height="893" />
+    </state>
+    <state width="1450" height="289" key="GridCell.Tab.1.bottom/0.0.1493.893@0.0.1493.893" timestamp="1609072470497" />
+    <state width="1450" height="289" key="GridCell.Tab.1.center" timestamp="1609072470497">
+      <screen x="0" y="0" width="1493" height="893" />
+    </state>
+    <state width="1450" height="289" key="GridCell.Tab.1.center/0.0.1493.893@0.0.1493.893" timestamp="1609072470497" />
+    <state width="1450" height="289" key="GridCell.Tab.1.left" timestamp="1609072470497">
+      <screen x="0" y="0" width="1493" height="893" />
+    </state>
+    <state width="1450" height="289" key="GridCell.Tab.1.left/0.0.1493.893@0.0.1493.893" timestamp="1609072470497" />
+    <state width="1450" height="289" key="GridCell.Tab.1.right" timestamp="1609072470497">
+      <screen x="0" y="0" width="1493" height="893" />
+    </state>
+    <state width="1450" height="289" key="GridCell.Tab.1.right/0.0.1493.893@0.0.1493.893" timestamp="1609072470497" />
   </component>
 </project>

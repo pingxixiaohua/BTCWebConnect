@@ -10,12 +10,18 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func GetBlockHeader(params ...interface{})models.BlockHeader{
+
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.GETBLOCKHERDER,
 		Jsonrpc: models.RPCVERSION,
 	}
+	if params != nil {
+		rpcrequest.Params = params
+	}
+
+
 	reqBytes,err:=json.Marshal(&rpcrequest)
 	if err!=nil {
 		fmt.Println(err.Error())
@@ -29,6 +35,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -45,26 +52,20 @@ func GetBlockChainInFo()models.BlockChain  {
 	code:=response.StatusCode
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
-
-
-	data:=getchain(body)
-
-
+	data:=getblockheader(body)
+	return data
 
 	if code==200 {
 		fmt.Println("请求成功")
-		return data
+
 	}else {
+		fmt.Println(code)
 		fmt.Println("请求失败")
 	}
-
-return data
-
-
-
+	return data
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func getblockheader(body []byte)models.BlockHeader {
+	var block models.BLOCKHEADER
+	json.Unmarshal([]byte(body),&block)
+	return block.Result
 }

@@ -10,16 +10,16 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func GetNetWorkHashPs() float64 {
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.GETNETWORKHASHPS ,
 		Jsonrpc: models.RPCVERSION,
 	}
 	reqBytes,err:=json.Marshal(&rpcrequest)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return 0
 	}
 	fmt.Println("准备好的json数据：",string(reqBytes))
 
@@ -29,6 +29,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+		return 0
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -40,14 +41,14 @@ func GetBlockChainInFo()models.BlockChain  {
 	response,err:=client.Do(request)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return 0
 	}
 	code:=response.StatusCode
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
 
 
-	data:=getchain(body)
+	data:=getnetworkhashps(body)
 
 
 
@@ -58,13 +59,13 @@ func GetBlockChainInFo()models.BlockChain  {
 		fmt.Println("请求失败")
 	}
 
-return data
 
-
+	return 0
 
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func getnetworkhashps(body []byte)float64  {
+	var net models.NetWorkHashPs
+	json.Unmarshal([]byte(body),&net)
+	return net.Result
 }
+

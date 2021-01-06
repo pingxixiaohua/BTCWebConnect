@@ -10,10 +10,10 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func GetChainTips()(models.Tips,models.Tips)  {
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.GETCHAINTIPS ,
 		Jsonrpc: models.RPCVERSION,
 	}
 	reqBytes,err:=json.Marshal(&rpcrequest)
@@ -29,6 +29,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -46,25 +47,19 @@ func GetBlockChainInFo()models.BlockChain  {
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
 
-
-	data:=getchain(body)
-
-
+	data1,data2:=gettips(body)
 
 	if code==200 {
 		fmt.Println("请求成功")
-		return data
+		return data1,data2
 	}else {
 		fmt.Println("请求失败")
 	}
 
-return data
-
-
-
+	return data1,data2
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func gettips(body []byte)(models.Tips,models.Tips) {
+	var tips models.Chaintips
+	json.Unmarshal([]byte(body),&tips)
+	return tips.Result[0],tips.Result[1]
 }

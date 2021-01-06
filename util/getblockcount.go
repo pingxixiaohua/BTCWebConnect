@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func Getblockvount() int{
+func Getblockcount() int{
 
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),

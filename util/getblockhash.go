@@ -10,14 +10,16 @@ import (
 	"time"
 )
 
-func GetBlockHash(height int)string{
+func GetBlockHash(params ...interface{})string{
 
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
 		Method:models.GETBLOCKHASH,
 		Jsonrpc: models.RPCVERSION,
 	}
-
+	if params != nil {
+		rpcrequest.Params = params
+	}
 
 
 	reqBytes,err:=json.Marshal(&rpcrequest)

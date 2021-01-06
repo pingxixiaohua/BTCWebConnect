@@ -10,10 +10,11 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func GetMemPoolInfo()models.Mem  {
+
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.GETMEMPOOLINFO ,
 		Jsonrpc: models.RPCVERSION,
 	}
 	reqBytes,err:=json.Marshal(&rpcrequest)
@@ -29,6 +30,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -46,25 +48,26 @@ func GetBlockChainInFo()models.BlockChain  {
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
 
-
-	data:=getchain(body)
+	data:=getmem(body)
 
 
 
 	if code==200 {
 		fmt.Println("请求成功")
 		return data
+
 	}else {
 		fmt.Println("请求失败")
 	}
 
-return data
-
+	return data
 
 
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func getmem(body []byte)models.Mem  {
+	var mem models.Mempollinfo
+	json.Unmarshal([]byte(body),&mem)
+	return mem.Result
+
+
 }

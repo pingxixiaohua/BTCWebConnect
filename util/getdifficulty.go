@@ -10,16 +10,17 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func Getdifficulty()float64  {
+
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.GETDIFFICULTY ,
 		Jsonrpc: models.RPCVERSION,
 	}
 	reqBytes,err:=json.Marshal(&rpcrequest)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return -1
 	}
 	fmt.Println("准备好的json数据：",string(reqBytes))
 
@@ -29,6 +30,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+		return -1
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -40,31 +42,31 @@ func GetBlockChainInFo()models.BlockChain  {
 	response,err:=client.Do(request)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return -1
 	}
 	code:=response.StatusCode
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
 
+	data:=getdifficulty(body)
 
-	data:=getchain(body)
 
 
 
 	if code==200 {
 		fmt.Println("请求成功")
-		return data
+	    return data
+
 	}else {
 		fmt.Println("请求失败")
 	}
 
-return data
 
-
-
+	return -1
+	
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func getdifficulty(body []byte)float64  {
+	var difficulty models.Difficulty
+	json.Unmarshal([]byte(body),&difficulty)
+	return difficulty.Result
 }

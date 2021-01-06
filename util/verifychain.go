@@ -10,16 +10,22 @@ import (
 	"time"
 )
 
-func GetBlockChainInFo()models.BlockChain  {
+func VerIfyChain(params ...interface{})string{
+
 	rpcrequest:=models.RPCRequest{
 		Id:      time.Now().Unix(),
-		Method:models.GETBLOCKCHAININFO ,
+		Method:models.VERIFYCHAIN,
 		Jsonrpc: models.RPCVERSION,
 	}
+	if params != nil {
+		rpcrequest.Params = params
+	}
+
+
 	reqBytes,err:=json.Marshal(&rpcrequest)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return "错误"
 	}
 	fmt.Println("准备好的json数据：",string(reqBytes))
 
@@ -29,6 +35,7 @@ func GetBlockChainInFo()models.BlockChain  {
 	request,err:=http.NewRequest("POST",models.RPCURL,reader)
 	if err!=nil {
 		fmt.Println(err.Error())
+		return "错误"
 	}
 
 	msg:=models.RPCUSER+":"+models.RPCPASSOWRD
@@ -40,31 +47,25 @@ func GetBlockChainInFo()models.BlockChain  {
 	response,err:=client.Do(request)
 	if err!=nil {
 		fmt.Println(err.Error())
-
+		return "错误"
 	}
 	code:=response.StatusCode
 	defer response.Body.Close()
 	body,err:=ioutil.ReadAll(response.Body)
-
-
-	data:=getchain(body)
-
-
+	data:=getver(body)
 
 	if code==200 {
 		fmt.Println("请求成功")
 		return data
 	}else {
+		fmt.Println(code)
 		fmt.Println("请求失败")
 	}
-
-return data
-
-
-
+	return "错误"
 }
-func getchain(body []byte)models.BlockChain {
-	var chain models.Chian
-	json.Unmarshal([]byte(body),&chain)
-	return chain.Result
+func getver(body []byte)string {
+	var blockhash models.VERIFYChain
+	json.Unmarshal([]byte(body),&blockhash)
+	return blockhash.Result
 }
+

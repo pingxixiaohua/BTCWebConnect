@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page</title>
+    <style>
+        body{
+            margin: 0px;
+            background-image: url("../static/img/QQ图片20210108013219.jpg");
+            background-size: 100% ;
+            background-repeat: no-repeat;
+        }
+        #headup{
+            width: 100%;
+            height: 2.8cm;
+            background-color: #F08B17;
+            background-image: url("../static/img/src=http___sc01.alicdn.com_kf_HTB1htGVKFXXXXcMXVXXq6xXFXXXH_bitcoin-BTC-1st-generator-make-bitcoins-.jpg_350x350.jpg&refer=http___sc01.alicdn.jpg");
+            background-size: 3cm;
+            background-repeat: no-repeat;
+        }
+        #font1{
+            color: white;
+            font-family: "Comic Sans MS";
+            font-size: 70px;
+            position: relative;
+            left: 35%;
+            top: 20px;
+        }
+        table{
+            border: 1px solid #F08B17;
+            border-collapse:collapse;
+            position: relative;
+            left: 450px;
+            top: 30px;
+        }
+        td{
+            margin: 0px;
+            border: 1px solid #F08B17;
+            padding: 0px;
+        }
+        #div1{
+            background-color: dimgrey;
+            width: 200px;
+            height: 520px;
+            opacity: 80%;
+        }
+        #div2{
+            background-color: whitesmoke;
+            width: 500px;
+            height: 500px;
+        }
+        select{
+            border: 1px solid #F08B17;
+            width: 100%;
+            height: 30px;
+        }
+
+        #font2{
+            position: relative;
+            bottom: 350px;
+            left: 220px;
+        }
+    </style>
+</head>
+<body>
+<div id="headup"></div>
+        <font id="font1">BITCOIN CORE</font>
+    <table>
+        <tr>
+            <td><div id="div1" name="div1">
+                    <form action="/getblockhash" method="post"><input type="submit" value="getblockhash"><input type="text" placeholder="Query by height" name="height"></form>
+                    <form action="/getblock" method="post"><input type="submit" name="getblock"><input type="text" name="hash" placeholder="Query by hash"></form>
+                    <form action="/preciousblock" method="post"><input type="submit" value="preciousblock"><input type="text" name="preciousblock" placeholder="Query by preciousblock"></form>
+                    <form action="/getblockfilter" method="post"><input type="submit" value="getblockfilter"><input type="text" name="getblockfilter" placeholder="Query by getblockfilter"></form>
+                    <form action="/getblockheader" method="post"><input type="submit" value="getblockheader"><input type="text" name="header" placeholder="Query by header"></form>
+
+                    <form action="/getblockcount" method="post"><input type="submit" value="getblockcount"></form>
+                    <form action="/getbestblockhash" method="post"><input type="submit" value="getbestblockhash"></form>
+                    <form action="/getblockchaininfo" method="post"><input type="submit" value="getblockchaininfo"></form>
+                    <form action="/getchaintips" method="post"><input type="submit" value="getchaintips"></form>
+                    <form action="/getdifficulty" method="post"><input type="submit" value="getdifficulty"></form>
+                    <form action="/getmempoolinfo" method="post"><input type="submit" value="getmempoolinfo"></form>
+                    <form action="/gettxoutsetinfo" method="post"><input type="submit" value="gettxoutsetinfo"></form>
+                    <form action="/getchaintxstats" method="post"><input type="submit" value="getchaintxstats"></form>
+                    <form action="/getwalletinfo" method="post"><input type="submit" value="getwalletinfo"></form>
+                    <form action="/getunconfirmedbalance" method="post"><input type="submit" value="getunconfirmedbalance"></form>
+                    <!--点击后出现的选项-->
+
+                </div></td>
+            <td><div id="div2" style="word-wrap: break-word;word-break: break-all;">{{.rpcdate}}</div>
+                <font id="font2">我不干了！！！</font>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<script language="JavaScript">
+    //完全忘记
+</script>
+</html>

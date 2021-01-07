@@ -2,40 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ccbba74-1400-446a-be48-450f319d4aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/block.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/blockheader.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/chaintips.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/difficulty.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/mempoolinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/networkhashps.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/rawmempool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/rpcinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/stop.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/txoutsetinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/verifychain.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/bitcoinstop.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getblock.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getblockheader.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getchaintips.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getdifficulty.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getmempoolinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getnetworkhashps.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getrawmempool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/getrpcinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/gettxoutsetinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/params.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/verifychain.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/BTCservice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/Utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/entity/RPCrequest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPC/entity/rpcResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBestHashServlet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBlockChainInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBlockFilter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBlockHashServlet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBlockHeaderServlet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getBlockcountServlet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getChainTips.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getChainTxStats.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getDifficulty.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getMemPoolInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getPreciousBlock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getTxOutSetInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getUnconfirmedBalance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getWalletInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/getblockServlet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/RPC/ently.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230181019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230233144.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230233151.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20210108013219.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20210108020621.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/src=http___sc01.alicdn.com_kf_HTB1htGVKFXXXXcMXVXXq6xXFXXXH_bitcoin-BTC-1st-generator-make-bitcoins-.jpg_350x350.jpg&amp;refer=http___sc01.alicdn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/newenter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/RPCRequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/RPCRequest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/blockchain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/data.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/getblockchaininfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/getblockchaininfo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/getblockcount.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/getblockcount.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/getblockhash.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/getblockhash.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/getnewadddress.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/hash.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/default_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -53,8 +57,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1lv2xWbXUsiGM9xwzfN4Hk9Onbg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -62,14 +71,34 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\goprojects\src\BitData" />
+      <recent name="C:\Users\goprojects\src\BitData\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\goprojects\src\BitData\static\img" />
+      <recent name="C:\Users\goprojects\src\BitData\models\RPC" />
+      <recent name="C:\Users\goprojects\src\BitData\views" />
       <recent name="C:\Users\goprojects\src\BitData\models" />
     </key>
   </component>
@@ -93,44 +122,73 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="722" y="71" key="#Inspections" timestamp="1608685115724">
+    <state x="533" y="97" key="#Build_Tags_&amp;_Vendoring" timestamp="1610035264852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="722" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1608685115724" />
-    <state x="580" y="218" key="FileChooserDialogImpl" timestamp="1608548583148">
+    <state x="533" y="97" key="#Build_Tags_&amp;_Vendoring/0.0.1536.824@0.0.1536.824" timestamp="1610035264852" />
+    <state x="722" y="71" key="#Inspections" timestamp="1610032830935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="580" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608548583148" />
-    <state width="850" height="209" key="GridCell.Tab.0.bottom" timestamp="1609924934168">
+    <state x="722" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1610032830935" />
+    <state x="533" y="97" key="#Notifications" timestamp="1610035089003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="850" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609924934168" />
-    <state width="850" height="209" key="GridCell.Tab.0.center" timestamp="1609924934168">
+    <state x="533" y="97" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1610035089003" />
+    <state x="968" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1610036284639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="850" height="209" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609924934168" />
-    <state width="850" height="209" key="GridCell.Tab.0.left" timestamp="1609924934168">
+    <state x="968" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610036284639" />
+    <state x="745" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610042774358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="850" height="209" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609924934168" />
-    <state width="850" height="209" key="GridCell.Tab.0.right" timestamp="1609924934168">
+    <state x="745" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610042774358" />
+    <state x="580" y="218" key="FileChooserDialogImpl" timestamp="1609936453344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="850" height="209" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609924934168" />
+    <state x="580" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609936453344" />
+    <state width="1493" height="19" key="GridCell.Tab.0.bottom" timestamp="1610045414433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="19" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
+    <state width="1493" height="19" key="GridCell.Tab.0.center" timestamp="1610045414433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="19" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
+    <state width="1493" height="19" key="GridCell.Tab.0.left" timestamp="1610045414433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="19" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
+    <state width="1493" height="19" key="GridCell.Tab.0.right" timestamp="1610045414433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="19" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
+    <state width="806" height="257" key="GridCell.Tab.1.bottom" timestamp="1610043892894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="806" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610043892894" />
+    <state width="806" height="257" key="GridCell.Tab.1.center" timestamp="1610043892893">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="806" height="257" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610043892893" />
+    <state width="806" height="257" key="GridCell.Tab.1.left" timestamp="1610043892893">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="806" height="257" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610043892893" />
+    <state width="806" height="257" key="GridCell.Tab.1.right" timestamp="1610043892893">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="806" height="257" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610043892893" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1610033010019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610033010019" />
+    <state x="228" y="227" width="889" height="369" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1610001111618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="228" y="227" width="889" height="369" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1610001111618" />
     <state x="722" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609202924711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609202924711" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

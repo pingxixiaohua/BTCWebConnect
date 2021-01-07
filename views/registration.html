@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration</title>
+</head>
+<style>
+    #div1{
+        background-image: url("../static/img/QQ图片20201230181019.jpg");
+        background-size: 100% 100%;
+        width: 100%;
+        height: 650px;
+    }
+    body{
+        margin: 0px;
+        border-top: 0px;
+    }
+    font{
+        font-family: "Comic Sans MS";
+    }
+    #headup{
+        width: 100%;
+        height: 2.8cm;
+        background-color: #F08B17;
+        background-image: url("../static/img/src=http___sc01.alicdn.com_kf_HTB1htGVKFXXXXcMXVXXq6xXFXXXH_bitcoin-BTC-1st-generator-make-bitcoins-.jpg_350x350.jpg&refer=http___sc01.alicdn.jpg");
+        background-size: 3cm;
+        background-repeat: no-repeat;
+        opacity: 70%;
+    }
+    #bodycen{
+        width: 450px;
+        height: 550px;
+        float: right;
+        position: relative;
+        right: 50px;
+        border-radius: 20px;
+        top: 20px;
+    }
+    ul,li{
+        color: darkblue;
+        margin-bottom: 30px;
+        float: right;
+        position: relative;
+        right: 20px;
+        top: 20px;
+    }
+    input{
+        width: 300px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #font1{
+        font-size: 20px;
+        position: relative;
+        left: 190px;
+
+    }
+    #fontver{
+        position: relative;
+        right: 110px;
+    }
+    #inpver{
+        position: relative;
+        right: 110px;
+        width: 190px;
+    }
+    #verimg{
+        background-color: azure;
+        width: 100px;
+        height: 40px;
+        position: relative;
+        left: 170px;
+        bottom: 40px;
+    }
+    #font2{
+        position: relative;
+        left: 140px;
+        bottom: 30px;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    #font3{
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+</style>
+
+<body>
+<div id="headup"></div>
+<div id="div1">
+    <div id="bodycen">
+        <ul style="list-style-type: none; float: left">
+            <font id="font1">注册登录</font>
+            <li><font>用户名:   </font><input type="text" name="姓名" placeholder="用户名"></li>
+            <li><font>身份证:  </font><input type="email" status="身份证" placeholder="身份证"></li>
+            <li><font>密码:   </font><input type="password" pwd="密码" placeholder="密码"></li>
+            <li><font>确认密码: </font><input type="conpassword" conpwd="确认密码" placeholder="确认密码"></li>
+            <li><font>手机:   </font><input type="email" phone="手机" placeholder="手机"></li>
+            <li><font id="fontver">短信验证: </font><input type="email" verification="短信验证" placeholder="短信验证" id="inpver"><div id="verimg">验证码什么的</div></li>
+        </ul>
+        <font id="font2"><button>立即注册</button></font>
+        <font id="font3">已有账号?<a href="../views/newenter.html" target="_blank">请登录</a></font>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "BitData/routers"
+	_"BitData/routers"
 	_ "BitData/util"
 	"fmt"
 	"github.com/astaxie/beego"
@@ -33,6 +33,10 @@ func main() {
 
 	//stop:=util.Stop()
 	//fmt.Println(stop)
+
+	beego.SetStaticPath("/js","./static/js")
+	beego.SetStaticPath("/img","./static/img")
+
 	beego.Run()
 }
 

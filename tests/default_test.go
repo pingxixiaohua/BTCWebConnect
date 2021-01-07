@@ -9,7 +9,7 @@ import (
 	_ "BitData/routers"
 
 	"github.com/astaxie/beego"
-	. "github.com/smartystreets/goconvey/convey"
+	_ "github.com/smartystreets/goconvey/convey"
 )
 
 func init() {

@@ -9,12 +9,12 @@ const STOP = "stop"
 const GETBLOCKCOUNT = "getblockcount"
 //获取节点的最新区块的hash值
 const GETBESTBLOCKHASH  = "getbestblockhash"
+//根据hash值获取区块的具体内容
+const GETBLOCK = "getblock"
 //生成新的比特币地址
 const GETNEWADDRESS = "getnewaddress"
 //根据高度获取某个区块的hash
 const GETBLOCKHASH = "getblockhash"
-//根据hash值获取区块的具体内容
-const GETBLOCK = "getblock"
 //获取区块链信息
 const GETBLOCKCHAININFO = "getblockchaininfo"
 //获取当前比特币网络中的区块难度

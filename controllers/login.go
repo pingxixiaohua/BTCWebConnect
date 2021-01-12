@@ -17,9 +17,13 @@ func (l *LoginControllers)Get(){
 }
 func (l *LoginControllers)Post(){
 	l.Ctx.Request.ParseForm()
-	str:= l.Ctx.Request.Form
-	fmt.Println(str)
-	var u User
-    fmt.Println(u)
-	l.TplName="page.html"
+	loginUserName := l.Ctx.Request.FormValue("user")
+	loginUserPassword := l.Ctx.Request.FormValue("password")
+	fmt.Printf("%T %T",loginUserPassword,loginUserName)
+	if loginUserName =="123" && loginUserPassword == "123" {
+		l.TplName="page.html"
+		return
+	}
+	l.Ctx.WriteString("登陆错误，请重试！")
+
 }

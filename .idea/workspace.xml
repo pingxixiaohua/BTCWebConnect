@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ccbba74-1400-446a-be48-450f319d4aa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/BTCservice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/Utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/constants.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/entity/RPCrequest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RPC/entity/rpcResult.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBestHashServlet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBlockChainInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBlockFilter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBlockHashServlet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBlockHeaderServlet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getBlockcountServlet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getChainTips.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getChainTxStats.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getDifficulty.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getMemPoolInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getPreciousBlock.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getTxOutSetInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getUnconfirmedBalance.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getWalletInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/getblockServlet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/RPC/ently.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230181019.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230233144.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20201230233151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20210108013219.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/QQ图片20210108020621.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/src=http___sc01.alicdn.com_kf_HTB1htGVKFXXXXcMXVXXq6xXFXXXH_bitcoin-BTC-1st-generator-make-bitcoins-.jpg_350x350.jpg&amp;refer=http___sc01.alicdn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/newenter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/default_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,22 +112,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609936453344" />
-    <state width="1493" height="19" key="GridCell.Tab.0.bottom" timestamp="1610045414433">
+    <state width="1493" height="230" key="GridCell.Tab.0.bottom" timestamp="1610365217335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="19" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
-    <state width="1493" height="19" key="GridCell.Tab.0.center" timestamp="1610045414433">
+    <state width="1493" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610365217335" />
+    <state width="1493" height="230" key="GridCell.Tab.0.center" timestamp="1610365217335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="19" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
-    <state width="1493" height="19" key="GridCell.Tab.0.left" timestamp="1610045414433">
+    <state width="1493" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610365217335" />
+    <state width="1493" height="230" key="GridCell.Tab.0.left" timestamp="1610365217335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="19" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
-    <state width="1493" height="19" key="GridCell.Tab.0.right" timestamp="1610045414433">
+    <state width="1493" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610365217335" />
+    <state width="1493" height="230" key="GridCell.Tab.0.right" timestamp="1610365217335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="19" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610045414433" />
+    <state width="1493" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610365217335" />
     <state width="806" height="257" key="GridCell.Tab.1.bottom" timestamp="1610043892894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
